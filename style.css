@@ -1,0 +1,29 @@
+.kalende{
+    display: grid;
+    width: 600px;
+    height: 600px;
+    border: 2px solid black;
+    grid-template-columns:  repeat(7, 1fr);
+    grid-template-rows: 1fr 0.5fr repeat(5, 1fr);
+    
+}
+
+.yearmonth{
+    grid-area: 1/1/1/8;
+    background-color: blueviolet;
+    letter-spacing: 10px;
+    font-size: 40px;
+}
+.week{
+    background-color: rgb(207, 175, 236);
+}
+.yearmonth, .week{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+.date{
+    border: 1px solid black;
+    text-align: right;
+}
